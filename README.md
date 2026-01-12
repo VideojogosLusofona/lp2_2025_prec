@@ -88,17 +88,19 @@ A nível de jogabilidade/interação:
   sair imediatamente da aplicação (tanto no editor, como na _build_), e as
   mesmas devem estar claramente indicadas no UI.
 
-### Sugestões de implementaçãao
+### Sugestões de implementação
 
-- Pensem no tabuleiro do jogo como um conjunto de **posições** ligadas por um
-  conjunto de **ligações**. Tanto as **posições** como as **ligações** devem ser
-  facilmente parameterizáveis (em código, ou mesmo lidas de um ficheiro de
-  configuração).
+- Criem primeiro o jogo em papel, joguem-no umas quantas vezes, e certifiquem-se
+  que entendem perfeitamente as regras do mesmo!
+- A nível do código, pensem no tabuleiro do jogo como um conjunto de
+  **posições** ligadas por um conjunto de **ligações**. Tanto as **posições**
+  como as **ligações** devem ser facilmente parameterizáveis (em código, ou
+  possivelmente lidas de um ficheiro de configuração que vocês definam).
 - As **posições** podem estar vazias, ter um lince, ter um coelho, mas nunca
-  mais do que um ao mesmo tempo.
-- A captura de uma vítima só pode ser feita saltando por cima da vítima **em
-  linha reta**. Ou seja, apesar as posições serem arbitrárias, a geometria é
-  crucial.
+  mais do que uma peça ao mesmo tempo.
+- A captura de uma peça só pode ser feita saltando por cima da peça **em linha
+  reta**. Ou seja, apesar as **posições** no tabuleiro serem arbitrárias, a
+  geometria é crucial para a captura de peças.
 
 ## Avaliação, discussão e _live coding_
 
@@ -126,7 +128,9 @@ estudantes que alterem uma das componentes ou regras do jogo, como por exemplo:
 - Permitir aos coelhos serem colocados dois de cada vez.
 - Converter o jogo em lince vs. lince (em que os linces de diferentes jogadores
   se podem capturar uns aos outros).
-- Um conjunto dos pontos anteriores ou algo diferente do indicado.
+- Implementar uma versão em consola, reutilizando **sem alterar** o código do
+  **modelo** do MVC.
+- Um conjunto dos pontos anteriores ou algo parecido ou diferente.
 
 Para que consigam fazer estas ou outras alterações, é essencial que o vosso
 projeto siga as melhores práticas e seja facilmente alterável e extensível. Por
